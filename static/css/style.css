@@ -1,0 +1,113 @@
+/* تنظیمات عمومی صفحه و فونت */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9; /* رنگ پس‌زمینه ملایم و مدرن */
+    color: #333;
+    overflow-x: hidden; /* جلوگیری از اسکرول افقی ناخواسته */
+}
+
+/* استایل‌دهی به کارت‌ها برای ایجاد عمق (Material Design Style) */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* هاور افکت ملایم روی کارت‌های تعاملی */
+.card:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: bold;
+    padding: 15px;
+}
+
+/* تنظیمات کانتینر نقشه - بسیار مهم برای WebGIS */
+#map {
+    width: 100%;
+    height: 85vh; /* ارتفاع نقشه ۸۵ درصد ارتفاع دید کاربر */
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+    position: relative;
+    overflow: hidden;
+}
+
+/* استایل پنل نمایش اطلاعات (GetFeatureInfo) */
+#feature-info {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+/* سفارشی‌سازی اسکرول‌بار برای پنل اطلاعات (Webkit only) */
+#feature-info::-webkit-scrollbar {
+    width: 6px;
+}
+#feature-info::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+#feature-info::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+#feature-info::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* استایل جدول نتایج WMS */
+.table-wms th {
+    width: 40%;
+    color: #495057;
+    font-weight: 600;
+    background-color: #f8f9fa;
+}
+.table-wms td {
+    color: #212529;
+}
+
+/* استایل‌های مربوط به فرم ورود و ثبت نام */
+.auth-container {
+    max-width: 400px;
+    margin: 60px auto;
+}
+
+.form-control {
+    border-radius: 6px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+    border-color: #86b7fe;
+}
+
+/* دکمه‌ها */
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+/* اصلاح جهت متن برای متون انگلیسی در قالب فارسی */
+.ltr-text {
+    direction: ltr;
+    text-align: left;
+}
+
+/* لودینگ اسپینر */
+.loading-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #6c757d;
+}
